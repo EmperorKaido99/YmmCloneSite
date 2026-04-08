@@ -117,21 +117,10 @@
           </ul>
         </div>
         <div class="disciplines-right">
-          <div class="orbit-wrap">
-            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="orbit-svg">
-              <circle cx="200" cy="200" r="178" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
-              <circle cx="200" cy="200" r="128" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
-              <circle cx="200" cy="200" r="78"  fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
-              <circle cx="200" cy="200" r="42"  fill="#2d8a2d"/>
-              <text x="200" y="207" text-anchor="middle" fill="white" font-size="16" font-family="Montserrat,sans-serif" font-weight="900">YMM</text>
-              <circle cx="200" cy="22"  r="9"  fill="#f5c518"/>
-              <circle cx="378" cy="200" r="7"  fill="#f5c518" opacity="0.75"/>
-              <circle cx="72"  cy="330" r="5"  fill="#f5c518" opacity="0.55"/>
-              <circle cx="200" cy="72"  r="5"  fill="white" opacity="0.5"/>
-              <circle cx="330" cy="72"  r="4"  fill="white" opacity="0.4"/>
-              <circle cx="22"  cy="160" r="4"  fill="white" opacity="0.4"/>
-              <circle cx="340" cy="310" r="3"  fill="white" opacity="0.3"/>
-            </svg>
+          <div class="disc-video-wrap">
+            <video autoplay muted loop playsinline poster="images/about-poster.jpg">
+              <source src="videos/apply-drone.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
       </div>
@@ -283,6 +272,69 @@
     </div>
   </section>
 
+  <!-- ═══ APPLY — VIDEO 3 ═══ -->
+  <section id="apply">
+    <div class="container">
+      <div class="apply-grid">
+        <div class="apply-left reveal-left">
+          <h2>Start Your Journey</h2>
+          <p class="apply-intro">Fill the form below to apply for our upcoming academic programmes.</p>
+          <form id="apply-form" novalidate>
+            <div class="form-group">
+              <label for="f-name">Full Name</label>
+              <input type="text" id="f-name" name="name" placeholder="Your full name">
+              <span class="field-error">Please enter your full name</span>
+            </div>
+            <div class="form-group">
+              <label for="f-email">Email Address</label>
+              <input type="email" id="f-email" name="email" placeholder="your@email.com">
+              <span class="field-error">Please enter a valid email address</span>
+            </div>
+            <div class="form-group">
+              <label for="f-phone">Phone Number</label>
+              <input type="tel" id="f-phone" name="phone" placeholder="0XX XXX XXXX">
+              <span class="field-error">Please enter your phone number</span>
+            </div>
+            <div class="form-group">
+              <label for="f-program">Select Programme</label>
+              <select id="f-program" name="program">
+                <option value="">— Choose a programme —</option>
+                <option value="ai">AI &amp; Autonomous Systems</option>
+                <option value="fabrication">Advanced Digital Fabrication</option>
+                <option value="space">Space Exploration</option>
+                <option value="sustainable">Sustainable Tech</option>
+                <option value="media">Immersive Digital Media</option>
+                <option value="cloud">Cloud Computing</option>
+              </select>
+              <span class="field-error">Please select a programme</span>
+            </div>
+            <button type="submit" class="btn-apply" id="apply-btn">APPLY NOW</button>
+            <div class="form-success" id="form-success">
+              ✓ Application received! We'll be in touch shortly.
+            </div>
+          </form>
+        </div>
+        <div class="apply-right reveal-right">
+          <div class="apply-video-wrap">
+            <video autoplay muted loop playsinline poster="images/apply-poster.jpg">
+              <source src="videos/apply-drone.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MISSION ═══ -->
+  <section id="mission">
+    <div class="container">
+      <div class="section-header">
+        <span class="pill">OUR MISSION</span>
+        <h2>Building Tomorrow's Leaders</h2>
+      </div>
+    </div>
+  </section>
+
   <!-- ═══ TESTIMONIALS ═══ -->
   <section id="testimonials">
     <div class="container">
@@ -359,60 +411,27 @@
     </div>
   </section>
 
-  <!-- ═══ APPLY — VIDEO 3 ═══ -->
-  <section id="apply">
+  <!-- ═══ ACCREDITATIONS ═══ -->
+  <section id="accreditations">
     <div class="container">
-      <div class="apply-grid">
-        <div class="apply-left reveal-left">
-          <div class="apply-logo-row">
-            <div class="apply-logo-icon">🌍</div>
-            <span class="apply-logo-text">YMM</span>
-          </div>
-          <h2>Start Your Journey</h2>
-          <p class="apply-intro">Fill the form below to apply for our upcoming academic programmes.</p>
-          <form id="apply-form" novalidate>
-            <div class="form-group">
-              <label for="f-name">Full Name</label>
-              <input type="text" id="f-name" name="name" placeholder="Your full name">
-              <span class="field-error">Please enter your full name</span>
-            </div>
-            <div class="form-group">
-              <label for="f-email">Email Address</label>
-              <input type="email" id="f-email" name="email" placeholder="your@email.com">
-              <span class="field-error">Please enter a valid email address</span>
-            </div>
-            <div class="form-group">
-              <label for="f-phone">Phone Number</label>
-              <input type="tel" id="f-phone" name="phone" placeholder="0XX XXX XXXX">
-              <span class="field-error">Please enter your phone number</span>
-            </div>
-            <div class="form-group">
-              <label for="f-program">Select Programme</label>
-              <select id="f-program" name="program">
-                <option value="">— Choose a programme —</option>
-                <option value="ai">AI &amp; Autonomous Systems</option>
-                <option value="fabrication">Advanced Digital Fabrication</option>
-                <option value="space">Space Exploration</option>
-                <option value="sustainable">Sustainable Tech</option>
-                <option value="media">Immersive Digital Media</option>
-                <option value="cloud">Cloud Computing</option>
-              </select>
-              <span class="field-error">Please select a programme</span>
-            </div>
-            <button type="submit" class="btn-apply" id="apply-btn">APPLY NOW</button>
-            <div class="form-success" id="form-success">
-              ✓ Application received! We'll be in touch shortly.
-            </div>
-          </form>
+      <h2 class="accred-title">Accreditations</h2>
+      <div class="accred-logos">
+        <div class="accred-item">
+          <img src="images/accreditations/agriseta.png" alt="AgriSETA" onerror="this.parentElement.style.display='none'">
         </div>
-        <div class="apply-right reveal-right">
-          <div class="apply-video-wrap">
-            <video autoplay muted loop playsinline poster="images/apply-poster.jpg">
-              <source src="videos/apply-drone.mp4" type="video/mp4">
-            </video>
-          </div>
+        <div class="accred-item">
+          <img src="images/accreditations/mict-seta.png" alt="MICT SETA" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="accred-item">
+          <img src="images/accreditations/saiosh.png" alt="Saiosh" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="accred-item">
+          <img src="images/accreditations/certified-innovation.png" alt="Certified Education Partner" onerror="this.parentElement.style.display='none'">
         </div>
       </div>
+    </div>
+    <div class="accred-banner">
+      <p><em>Youth Media Movement – your <strong>gateway</strong> to a <strong>future</strong> defined by<br><strong>groundbreaking innovation</strong></em></p>
     </div>
   </section>
 
@@ -462,13 +481,6 @@
             <li>&#9993;&#65039; admin@ymm.org.za</li>
           </ul>
         </div>
-      </div>
-      <div class="footer-accreditations">
-        <span>Accredited by:</span>
-        <img src="images/accreditations/agriseta.png" alt="AgriSETA" onerror="this.style.display='none'">
-        <img src="images/accreditations/mict-seta.png" alt="MICT SETA" onerror="this.style.display='none'">
-        <img src="images/accreditations/saiosh.png" alt="SAIOSH" onerror="this.style.display='none'">
-        <img src="images/accreditations/certified-innovation.png" alt="Certified Innovation" onerror="this.style.display='none'">
       </div>
       <div class="footer-bottom">
         <p>&copy; 2024 Youth Media Movement. All rights reserved. | <a href="#">Privacy Policy</a></p>

@@ -1,0 +1,54 @@
+# ══════════════════════════════════════════
+# YMM Website — .gitignore
+# ══════════════════════════════════════════
+
+# ── VIDEOS (too large for git — host separately) ──
+videos/
+*.mp4
+*.mov
+*.avi
+*.webm
+
+# ── IMAGES — poster fallbacks (add manually or via LFS) ──
+images/hero-poster.jpg
+images/about-poster.jpg
+images/apply-poster.jpg
+
+# ── OS FILES ──
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ── EDITORS ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── NODE (if you ever add build tools) ──
+node_modules/
+npm-debug.log*
+yarn-error.log
+package-lock.json
+
+# ── ENV & SECRETS ──
+.env
+.env.local
+.env.*
+
+# ── CLAUDE CODE ──
+.claude/cache/
+.claude/tmp/
+
+# ── MISC ──
+*.log
+*.tmp
+*.bak
+dist/
+.cache/
