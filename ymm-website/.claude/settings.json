@@ -1,0 +1,7 @@
+{
+  "projectName": "YMM Africa Website",
+  "contextFiles": [
+    "agents/AGENTS.md",
+    "claude-skills/SKILLS.md"
+  ]
+}

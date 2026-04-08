@@ -1,0 +1,30 @@
+/* =============================================
+   YMM Africa — Main Stylesheet
+   All styles, CSS variables, responsive breakpoints
+   ============================================= */
+
+/* --- Variables --- */
+:root {
+  --color-primary: #0a0a0a;
+  --color-accent: #f0a500;
+  --color-text: #ffffff;
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+/* --- Reset --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background: var(--color-primary);
+}
+
+/* --- Responsive Breakpoints --- */
+/* Mobile:  max-width 480px  */
+/* Tablet:  max-width 768px  */
+/* Desktop: min-width 1024px */
