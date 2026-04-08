@@ -1,36 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YMM Africa</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Media Movement — Empowering Tomorrow's Innovators</title>
+  <meta name="description" content="Youth Media Movement offers accredited tech training in AI, drones, 3D printing, and space tech for South African youth. Based in Mitchells Plain, Cape Town.">
+  <meta property="og:title" content="Youth Media Movement — Empowering Tomorrow's Innovators">
+  <meta property="og:description" content="Accredited tech training in AI, drones, 3D printing and space exploration for South African youth.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav id="navbar"></nav>
+  <!-- ═══ NAV ═══ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-icon">
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="19" cy="19" r="19" fill="#2d8a2d"/>
+            <text x="19" y="26" text-anchor="middle" font-size="20" fill="white">🌍</text>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-ymm">YMM</span>
+          <span class="logo-full">YOUTH MEDIA MOVEMENT</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#disciplines">DISCIPLINES &amp; TRAINING</a></li>
+        <li><a href="#apply">APPLY</a></li>
+        <li><a href="#testimonials">TESTIMONIALS</a></li>
+        <li><a href="#contact" class="nav-cta">CONTACT US</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <!-- HERO -->
+  <!-- ═══ HERO — VIDEO 1 ═══ -->
   <section id="hero">
-    <video autoplay muted loop playsinline poster="images/hero-poster.jpg">
-      <source src="videos/hero-background.mp4" type="video/mp4" />
-    </video>
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline poster="images/hero-poster.jpg">
+        <source src="videos/hero-background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">Empowering Tomorrow's<br><span class="text-green">Innovators</span> Today</h1>
+      <p class="hero-sub">Innovative Solutions In Drone Tech, 3D Printing, Space Exploration, And Gamification</p>
+      <a href="#apply" class="btn-yellow">LET'S ELEVATE YOUR BUSINESS</a>
+    </div>
+    <div class="hero-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <div class="hero-scroll-arrow">&#8595;</div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ═══ ABOUT — VIDEO 2 ═══ -->
   <section id="about">
-    <video autoplay muted loop playsinline poster="images/about-poster.jpg">
-      <source src="videos/about-3dprinter.mp4" type="video/mp4" />
-    </video>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left reveal-left">
+          <div class="about-video-wrap">
+            <video autoplay muted loop playsinline poster="images/about-poster.jpg">
+              <source src="videos/about-3dprinter.mp4" type="video/mp4">
+            </video>
+            <div class="about-badge">
+              <span class="badge-num">10+</span>
+              <span class="badge-txt">Years of Impact</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal-right">
+          <span class="pill">OUR VISION</span>
+          <h2>Welcome to Youth Media Movement—your gateway to a future defined by groundbreaking innovation.</h2>
+          <p>We cultivate a holistic mastery of digital technology. We don't just teach tools; we cultivate the mindset of tomorrow's leaders. Our programmes are designed to equip youth to overcome today's challenges and grasp tomorrow's opportunities.</p>
+          <div class="about-stats">
+            <div class="stat-block">
+              <h4>Holistic Growth</h4>
+              <p>Cultivating well-rounded digital citizens</p>
+            </div>
+            <div class="stat-block">
+              <h4>Tech Leadership</h4>
+              <p>Training the next generation of innovators</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- APPLY -->
-  <section id="apply">
-    <video autoplay muted loop playsinline poster="images/apply-poster.jpg">
-      <source src="videos/apply-drone.mp4" type="video/mp4" />
-    </video>
+  <!-- ═══ DISCIPLINES ═══ -->
+  <section id="disciplines">
+    <div class="container">
+      <div class="disciplines-grid">
+        <div class="disciplines-left reveal-left">
+          <span class="pill pill-yellow">OUR DISCIPLINES</span>
+          <h2>Shaping the Future,<br>One Skill at a Time</h2>
+          <ul class="disciplines-list">
+            <li>Drone Technology &amp; Aerial Systems</li>
+            <li>3D Printing &amp; Digital Fabrication</li>
+            <li>Artificial Intelligence &amp; Machine Learning</li>
+            <li>Space Exploration &amp; Aerospace Science</li>
+            <li>Sustainable Technology &amp; Green Innovation</li>
+            <li>Immersive Digital Media &amp; VR/AR</li>
+            <li>Cloud Computing &amp; Data Science</li>
+          </ul>
+        </div>
+        <div class="disciplines-right">
+          <div class="orbit-wrap">
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="orbit-svg">
+              <circle cx="200" cy="200" r="178" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+              <circle cx="200" cy="200" r="128" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+              <circle cx="200" cy="200" r="78"  fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+              <circle cx="200" cy="200" r="42"  fill="#2d8a2d"/>
+              <text x="200" y="207" text-anchor="middle" fill="white" font-size="16" font-family="Montserrat,sans-serif" font-weight="900">YMM</text>
+              <circle cx="200" cy="22"  r="9"  fill="#f5c518"/>
+              <circle cx="378" cy="200" r="7"  fill="#f5c518" opacity="0.75"/>
+              <circle cx="72"  cy="330" r="5"  fill="#f5c518" opacity="0.55"/>
+              <circle cx="200" cy="72"  r="5"  fill="white" opacity="0.5"/>
+              <circle cx="330" cy="72"  r="4"  fill="white" opacity="0.4"/>
+              <circle cx="22"  cy="160" r="4"  fill="white" opacity="0.4"/>
+              <circle cx="340" cy="310" r="3"  fill="white" opacity="0.3"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- ═══ PROGRAMS ═══ -->
+  <section id="programs">
+    <div class="container">
+      <div class="section-header">
+        <span class="pill">PROGRAMS &amp; TRAINING</span>
+        <h2>Our Programmes</h2>
+      </div>
+      <div class="cards-grid">
+
+        <div class="card-wrap">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-icon">🤖</div>
+              <h3>AI &amp; Autonomous Systems</h3>
+              <p>Explore AI fundamentals, machine learning, and autonomous robotics reshaping industries worldwide.</p>
+              <span class="learn-more">LEARN MORE &#8594;</span>
+            </div>
+            <div class="card-back">
+              <h3>AI &amp; Autonomous Systems</h3>
+              <ul>
+                <li>Machine learning fundamentals</li>
+                <li>Neural network design</li>
+                <li>Robotics &amp; automation</li>
+                <li>Computer vision basics</li>
+                <li>Real-world AI applications</li>
+              </ul>
+              <button class="btn-close">CLOSE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrap">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-icon">⚙️</div>
+              <h3>Advanced Digital Fabrication</h3>
+              <p>Master 3D printing, laser cutting, and digital prototyping used in modern manufacturing.</p>
+              <span class="learn-more">LEARN MORE &#8594;</span>
+            </div>
+            <div class="card-back">
+              <h3>Advanced Digital Fabrication</h3>
+              <ul>
+                <li>3D modelling &amp; slicing</li>
+                <li>FDM &amp; resin printing</li>
+                <li>Laser cutting &amp; engraving</li>
+                <li>Rapid prototyping</li>
+                <li>Product design principles</li>
+              </ul>
+              <button class="btn-close">CLOSE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrap">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-icon">🚀</div>
+              <h3>Space Exploration</h3>
+              <p>Dive into aerospace science, satellite technology, and the frontier of space innovation.</p>
+              <span class="learn-more">LEARN MORE &#8594;</span>
+            </div>
+            <div class="card-back">
+              <h3>Space Exploration</h3>
+              <ul>
+                <li>Orbital mechanics basics</li>
+                <li>Satellite systems &amp; CubeSats</li>
+                <li>Rocketry fundamentals</li>
+                <li>Astronomy &amp; astrophysics</li>
+                <li>Space mission design</li>
+              </ul>
+              <button class="btn-close">CLOSE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrap">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-icon">🌱</div>
+              <h3>Sustainable Tech</h3>
+              <p>Build green technology solutions addressing climate change and driving environmental innovation.</p>
+              <span class="learn-more">LEARN MORE &#8594;</span>
+            </div>
+            <div class="card-back">
+              <h3>Sustainable Tech</h3>
+              <ul>
+                <li>Renewable energy systems</li>
+                <li>Solar &amp; wind technology</li>
+                <li>Eco-design principles</li>
+                <li>Carbon footprint analysis</li>
+                <li>Circular economy models</li>
+              </ul>
+              <button class="btn-close">CLOSE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrap">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-icon">🎬</div>
+              <h3>Immersive Digital Media</h3>
+              <p>Create compelling VR/AR experiences, digital stories, and next-generation interactive content.</p>
+              <span class="learn-more">LEARN MORE &#8594;</span>
+            </div>
+            <div class="card-back">
+              <h3>Immersive Digital Media</h3>
+              <ul>
+                <li>VR &amp; AR development</li>
+                <li>3D animation &amp; motion</li>
+                <li>Digital storytelling</li>
+                <li>Game design basics</li>
+                <li>Interactive media production</li>
+              </ul>
+              <button class="btn-close">CLOSE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrap">
+          <div class="card">
+            <div class="card-front">
+              <div class="card-icon">☁️</div>
+              <h3>Cloud Computing</h3>
+              <p>Master cloud infrastructure, data management, and modern computing skills employers demand.</p>
+              <span class="learn-more">LEARN MORE &#8594;</span>
+            </div>
+            <div class="card-back">
+              <h3>Cloud Computing</h3>
+              <ul>
+                <li>Cloud platforms (AWS, Azure)</li>
+                <li>Data storage &amp; management</li>
+                <li>DevOps fundamentals</li>
+                <li>Cybersecurity basics</li>
+                <li>Serverless architecture</li>
+              </ul>
+              <button class="btn-close">CLOSE</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="testi-header">
+        <div>
+          <span class="pill pill-dark">STUDENT TESTIMONIALS</span>
+          <h2>Voices of Tomorrow</h2>
+        </div>
+        <div class="carousel-arrows">
+          <button class="arrow-btn" id="prev-btn" aria-label="Previous testimonial">&#8592;</button>
+          <button class="arrow-btn" id="next-btn" aria-label="Next testimonial">&#8594;</button>
+        </div>
+      </div>
+      <div class="carousel-track-wrap">
+        <div class="carousel-track" id="carousel-track">
+
+          <div class="testi-card">
+            <p class="testi-quote">"Youth Media Movement changed my life. I went from not knowing what an algorithm was to building my own AI model in just 6 months. The mentors push you to think beyond what you thought was possible."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">A</div>
+              <div>
+                <strong>Amara Dlamini</strong>
+                <span>AI &amp; Autonomous Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <p class="testi-quote">"I learned to design, 3D print, and prototype — all in one programme. The hands-on approach made everything click. I now run a small fabrication business from home."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">S</div>
+              <div>
+                <strong>Sipho Nkosi</strong>
+                <span>Advanced Digital Fabrication</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <p class="testi-quote">"The training I received at YMM opened doors I didn't even know existed. I'm now certified in drone operations and working with a local agricultural company doing aerial surveys."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">L</div>
+              <div>
+                <strong>Lerato Mokoena</strong>
+                <span>Drone Technology</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <p class="testi-quote">"Coming from Mitchells Plain with no connections in tech, YMM gave me the skills, the network, and the confidence to land my first cloud engineering internship at just 19."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">T</div>
+              <div>
+                <strong>Tayla Williams</strong>
+                <span>Cloud Computing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <p class="testi-quote">"Space Exploration at YMM is not science fiction — we built and launched a high-altitude balloon and tracked it with our own software. That experience is on my CV and it gets attention."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">K</div>
+              <div>
+                <strong>Kagiso Sithole</strong>
+                <span>Space Exploration</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ APPLY — VIDEO 3 ═══ -->
+  <section id="apply">
+    <div class="container">
+      <div class="apply-grid">
+        <div class="apply-left reveal-left">
+          <div class="apply-logo-row">
+            <div class="apply-logo-icon">🌍</div>
+            <span class="apply-logo-text">YMM</span>
+          </div>
+          <h2>Start Your Journey</h2>
+          <p class="apply-intro">Fill the form below to apply for our upcoming academic programmes.</p>
+          <form id="apply-form" novalidate>
+            <div class="form-group">
+              <label for="f-name">Full Name</label>
+              <input type="text" id="f-name" name="name" placeholder="Your full name">
+              <span class="field-error">Please enter your full name</span>
+            </div>
+            <div class="form-group">
+              <label for="f-email">Email Address</label>
+              <input type="email" id="f-email" name="email" placeholder="your@email.com">
+              <span class="field-error">Please enter a valid email address</span>
+            </div>
+            <div class="form-group">
+              <label for="f-phone">Phone Number</label>
+              <input type="tel" id="f-phone" name="phone" placeholder="0XX XXX XXXX">
+              <span class="field-error">Please enter your phone number</span>
+            </div>
+            <div class="form-group">
+              <label for="f-program">Select Programme</label>
+              <select id="f-program" name="program">
+                <option value="">— Choose a programme —</option>
+                <option value="ai">AI &amp; Autonomous Systems</option>
+                <option value="fabrication">Advanced Digital Fabrication</option>
+                <option value="space">Space Exploration</option>
+                <option value="sustainable">Sustainable Tech</option>
+                <option value="media">Immersive Digital Media</option>
+                <option value="cloud">Cloud Computing</option>
+              </select>
+              <span class="field-error">Please select a programme</span>
+            </div>
+            <button type="submit" class="btn-apply" id="apply-btn">APPLY NOW</button>
+            <div class="form-success" id="form-success">
+              ✓ Application received! We'll be in touch shortly.
+            </div>
+          </form>
+        </div>
+        <div class="apply-right reveal-right">
+          <div class="apply-video-wrap">
+            <video autoplay muted loop playsinline poster="images/apply-poster.jpg">
+              <source src="videos/apply-drone.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER / CONTACT ═══ -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <span class="logo-ymm">YMM</span>
+            <span class="logo-full">YOUTH MEDIA MOVEMENT</span>
+          </div>
+          <p>Empowering South African youth with cutting-edge technology skills for the future of work.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="Twitter / X">X</a>
+            <a href="#" aria-label="LinkedIn">li</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#disciplines">Disciplines &amp; Training</a></li>
+            <li><a href="#programs">Programmes</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#apply">Apply Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>PROGRAMMES</h4>
+          <ul>
+            <li><a href="#programs">AI &amp; Autonomous Systems</a></li>
+            <li><a href="#programs">Advanced Digital Fabrication</a></li>
+            <li><a href="#programs">Space Exploration</a></li>
+            <li><a href="#programs">Sustainable Tech</a></li>
+            <li><a href="#programs">Immersive Digital Media</a></li>
+            <li><a href="#programs">Cloud Computing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>CONTACT</h4>
+          <ul class="contact-list">
+            <li>&#128205; 58 Sovereign Road, Morgens Village,<br>Mitchells Plain, WC, 7785</li>
+            <li>&#128222; 021 200 5391</li>
+            <li>&#9993;&#65039; admin@ymm.org.za</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-accreditations">
+        <span>Accredited by:</span>
+        <img src="images/accreditations/agriseta.png" alt="AgriSETA" onerror="this.style.display='none'">
+        <img src="images/accreditations/mict-seta.png" alt="MICT SETA" onerror="this.style.display='none'">
+        <img src="images/accreditations/saiosh.png" alt="SAIOSH" onerror="this.style.display='none'">
+        <img src="images/accreditations/certified-innovation.png" alt="Certified Innovation" onerror="this.style.display='none'">
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Youth Media Movement. All rights reserved. | <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
