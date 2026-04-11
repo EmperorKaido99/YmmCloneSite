@@ -50,9 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let autoInterval;
 
   function getVisible() {
-    if (window.innerWidth <= 767) return 1;
-    if (window.innerWidth <= 900) return 2;
-    return 3;
+    if (window.innerWidth <= 900) return 1;
+    return 2;
   }
 
   function updateCarousel() {
