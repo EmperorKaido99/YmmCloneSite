@@ -20,26 +20,17 @@
   <nav id="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-logo">
-        <div class="logo-icon">
-          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="19" cy="19" r="19" fill="#2d8a2d"/>
-            <text x="19" y="26" text-anchor="middle" font-size="20" fill="white">🌍</text>
-          </svg>
-        </div>
-        <div class="logo-text">
-          <span class="logo-ymm">YMM</span>
-          <span class="logo-full">YOUTH MEDIA MOVEMENT</span>
-        </div>
+        <img src="images/logo/logo.png" alt="Youth Media Movement" class="nav-logo-img">
       </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about">ABOUT US</a></li>
-        <li><a href="#disciplines">DISCIPLINES &amp; TRAINING</a></li>
-        <li><a href="#apply">APPLY</a></li>
-        <li><a href="#testimonials">TESTIMONIALS</a></li>
-        <li><a href="#contact" class="nav-cta">CONTACT US</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#disciplines">Programs &amp; Training</a></li>
+        <li><a href="#apply">Apply</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="nav-cta">CONTACT</a></li>
       </ul>
     </div>
   </nav>
@@ -72,7 +63,7 @@
         <div class="about-left reveal-left">
           <div class="about-video-wrap">
             <video autoplay muted loop playsinline poster="images/about-poster.jpg">
-              <source src="videos/about-3dprinter.mp4" type="video/mp4">
+              <source src="videos/apply-drone.mp4" type="video/mp4">
             </video>
             <div class="about-badge">
               <span class="badge-num">10+</span>
@@ -119,7 +110,7 @@
         <div class="disciplines-right">
           <div class="disc-video-wrap">
             <video autoplay muted loop playsinline poster="images/about-poster.jpg">
-              <source src="videos/apply-drone.mp4" type="video/mp4">
+              <source src="videos/about-3dprinter.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -328,9 +319,15 @@
   <!-- ═══ MISSION ═══ -->
   <section id="mission">
     <div class="container">
-      <div class="section-header">
-        <span class="pill">OUR MISSION</span>
-        <h2>Building Tomorrow's Leaders</h2>
+      <div class="mission-grid">
+        <div class="mission-africa reveal-left">
+          <img src="images/icons/mission-africa.png" alt="YMM Africa map with tech icons">
+        </div>
+        <div class="mission-box reveal-right">
+          <div class="mission-quote-mark">❝</div>
+          <h3>OUR MISSION</h3>
+          <p>To bridge the gap between human potential and technological evolution, driving a smarter, more connected, and future ready world.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -339,74 +336,84 @@
   <section id="testimonials">
     <div class="container">
       <div class="testi-header">
-        <div>
-          <span class="pill pill-dark">STUDENT TESTIMONIALS</span>
-          <h2>Voices of Tomorrow</h2>
-        </div>
-        <div class="carousel-arrows">
-          <button class="arrow-btn" id="prev-btn" aria-label="Previous testimonial">&#8592;</button>
-          <button class="arrow-btn" id="next-btn" aria-label="Next testimonial">&#8594;</button>
-        </div>
+        <span class="pill">TESTIMONIALS</span>
+        <h2 class="testi-title">Voices of Tomorrow</h2>
+        <p class="testi-sub">The Voices Of Tomorrow</p>
       </div>
-      <div class="carousel-track-wrap">
-        <div class="carousel-track" id="carousel-track">
+      <div class="carousel-outer">
+        <button class="arrow-btn" id="prev-btn" aria-label="Previous testimonial">&#8592;</button>
+        <div class="carousel-track-wrap">
+          <div class="carousel-track" id="carousel-track">
 
-          <div class="testi-card">
-            <p class="testi-quote">"Youth Media Movement changed my life. I went from not knowing what an algorithm was to building my own AI model in just 6 months. The mentors push you to think beyond what you thought was possible."</p>
-            <div class="testi-author">
-              <div class="testi-avatar">A</div>
-              <div>
-                <strong>Amara Dlamini</strong>
-                <span>AI &amp; Autonomous Systems</span>
+            <div class="testi-card">
+              <p class="testi-quote">Thank you, Sasha, and thank you to the YMM for their constant support and motivation. So much love for you all.</p>
+              <div class="testi-author">
+                <div class="testi-avatar">F</div>
+                <div>
+                  <strong class="testi-name">Firdous Petersen</strong>
+                  <span class="testi-role">YMM Graduate</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="testi-card">
-            <p class="testi-quote">"I learned to design, 3D print, and prototype — all in one programme. The hands-on approach made everything click. I now run a small fabrication business from home."</p>
-            <div class="testi-author">
-              <div class="testi-avatar">S</div>
-              <div>
-                <strong>Sipho Nkosi</strong>
-                <span>Advanced Digital Fabrication</span>
+            <div class="testi-card">
+              <p class="testi-quote">Thanks again for everything Sasha. You've done a great job with your organising and going above and beyond to help people — that I'll forever be grateful for. Will definitely thank you in person on graduation day.</p>
+              <div class="testi-author">
+                <div class="testi-avatar">F</div>
+                <div>
+                  <strong class="testi-name">Farren Jansen</strong>
+                  <span class="testi-role">YMM Graduate</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="testi-card">
-            <p class="testi-quote">"The training I received at YMM opened doors I didn't even know existed. I'm now certified in drone operations and working with a local agricultural company doing aerial surveys."</p>
-            <div class="testi-author">
-              <div class="testi-avatar">L</div>
-              <div>
-                <strong>Lerato Mokoena</strong>
-                <span>Drone Technology</span>
+            <div class="testi-card">
+              <p class="testi-quote">Good evening Sasha. I just want to take a few seconds to thank you so much for everything you did for us — from making sure we were sorted to sorting out our books. You were not just a facilitator, you created amazing bonds with all of us. Thank you for the love you showed us. I pray that God elevates you in every aspect of your life. Thank you for an amazing 3 months — love you lots!</p>
+              <div class="testi-author">
+                <div class="testi-avatar">C</div>
+                <div>
+                  <strong class="testi-name">Chanel Tomlinson</strong>
+                  <span class="testi-role">YMM Graduate</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="testi-card">
-            <p class="testi-quote">"Coming from Mitchells Plain with no connections in tech, YMM gave me the skills, the network, and the confidence to land my first cloud engineering internship at just 19."</p>
-            <div class="testi-author">
-              <div class="testi-avatar">T</div>
-              <div>
-                <strong>Tayla Williams</strong>
-                <span>Cloud Computing</span>
+            <div class="testi-card">
+              <p class="testi-quote">I would like to pass a word of gratitude to YMM for going the extra mile for us students. I often feel we don't show enough gratitude for all you do behind the scenes — that which we know and that which we don't. May the Almighty reward you in good for these efforts.</p>
+              <div class="testi-author">
+                <div class="testi-avatar">S</div>
+                <div>
+                  <strong class="testi-name">Siyambonga Hesi</strong>
+                  <span class="testi-role">YMM Student</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="testi-card">
-            <p class="testi-quote">"Space Exploration at YMM is not science fiction — we built and launched a high-altitude balloon and tracked it with our own software. That experience is on my CV and it gets attention."</p>
-            <div class="testi-author">
-              <div class="testi-avatar">K</div>
-              <div>
-                <strong>Kagiso Sithole</strong>
-                <span>Space Exploration</span>
+            <div class="testi-card">
+              <p class="testi-quote">Thanks to Marshall for the inspiration and for going above and beyond. Thanks to Sasha for pushing us, inspiring us, and believing in us. I started the year with just one goal and that was being another statistic in my community — but the drone course changed everything. I found my career and goals. There's a blessing in genuine servanthood.</p>
+              <div class="testi-author">
+                <div class="testi-avatar">D</div>
+                <div>
+                  <strong class="testi-name">Delon Jade Absolon</strong>
+                  <span class="testi-role">Drone Course Student</span>
+                </div>
               </div>
             </div>
-          </div>
 
+            <div class="testi-card">
+              <p class="testi-quote">Good evening Sasha — thank you for everything you and YMM do for us. I really appreciate it all: the warm water, coffee, tea, study materials and opportunities. I have to say I never expected things to open up so much. Having been exposed to the drone course, things suddenly started to click for me. I found my career and I look up to you and the team so much.</p>
+              <div class="testi-author">
+                <div class="testi-avatar">A</div>
+                <div>
+                  <strong class="testi-name">Abdul Aziz Martin</strong>
+                  <span class="testi-role">Drone Course Student</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
+        <button class="arrow-btn" id="next-btn" aria-label="Next testimonial">&#8594;</button>
       </div>
     </div>
   </section>
@@ -440,16 +447,13 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col footer-brand">
-          <div class="footer-logo">
-            <span class="logo-ymm">YMM</span>
-            <span class="logo-full">YOUTH MEDIA MOVEMENT</span>
-          </div>
+          <img src="images/logo/logo.png" alt="Youth Media Movement" class="footer-logo-img">
           <p>Empowering South African youth with cutting-edge technology skills for the future of work.</p>
           <div class="social-links">
-            <a href="#" aria-label="Facebook">f</a>
+            <a href="https://www.facebook.com/youthmediamovement/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">f</a>
             <a href="#" aria-label="Instagram">in</a>
             <a href="#" aria-label="Twitter / X">X</a>
-            <a href="#" aria-label="LinkedIn">li</a>
+            <a href="https://za.linkedin.com/in/marshall-nelson-78758316" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">li</a>
           </div>
         </div>
         <div class="footer-col">
