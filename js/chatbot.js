@@ -1,17 +1,14 @@
 // ═══════════════════════════════════════════════
-// YMM Africa — Nelson Chatbot (Gemini 2.0 Flash)
+// YMM Africa — YMM Bot Chatbot (Gemini 2.0 Flash)
 // ═══════════════════════════════════════════════
 
 (function () {
   'use strict';
 
   // ── CONFIG ──────────────────────────────────
-  const GEMINI_API_KEY = 'YOUR_GEMINI_API_KEY';
-  const GEMINI_URL =
-    'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' +
-    GEMINI_API_KEY;
+  const GEMINI_URL = '/.netlify/functions/chat';
 
-  const SYSTEM_PROMPT = `Your name is Nelson. You are the friendly virtual assistant for YMM (Youth Media Movement) on ymm.org.za. Your job is to help visitors discover programmes, understand how to apply, get career guidance, and find contact or location info — replacing the need to scroll through the whole site.
+  const SYSTEM_PROMPT = `Your name is YMM Bot. You are the friendly virtual assistant for YMM (Youth Media Movement) on ymm.org.za. Your job is to help visitors discover programmes, understand how to apply, get career guidance, and find contact or location info — replacing the need to scroll through the whole site.
 
 ━━━ ORGANISATION ━━━
 Name: Youth Media Movement (YMM)
@@ -60,17 +57,17 @@ Step 2: Fill in the online application form — you'll need: full name, email ad
 Step 3: Submit the form. The YMM team will contact you shortly to confirm your application.
 Eligibility: YMM programmes are designed for South African youth. For specific age requirements, prior qualifications, or special circumstances, contact admin@ymm.org.za or call 021 200 5391.
 
-━━━ FEES & INTAKE DATES ━━━
-For accurate, up-to-date information on fees, bursaries, payment plans, or the next intake date: contact admin@ymm.org.za or call 021 200 5391. Do NOT guess or make up any numbers.
+━━━ FEES, INTAKE DATES & COURSE SCHEDULES ━━━
+For anything about fees, bursaries, payment plans, intake dates, course start dates, or when the next course begins: always tell the visitor to call 021 200 5391 directly — the team will give them the latest info. Do NOT guess or make up any numbers or dates.
 
 ━━━ RESPONSE RULES ━━━
-- Your name is Nelson — introduce yourself if asked
+- Your name is YMM Bot — introduce yourself if asked
 - Be warm, empowering, and youth-friendly. Use encouraging language.
 - Be concise: max 3–4 sentences unless the visitor asks for detail or you're listing programmes/career paths
 - Always answer in the language the visitor uses
 - When someone mentions interest in drones, AI, 3D printing, space, media, or cloud: describe what they'll learn AND outline career paths, then invite them to apply
 - When someone asks how to apply or seems ready: give the 3-step process above and link them to the Apply section
-- When asked about fees or intake dates: always redirect to the contact details — never invent numbers
+- When asked about fees, intake dates, course dates, or when a course starts: always tell them to call 021 200 5391 — never invent numbers or dates
 - When asked about directions or office hours: give the address and suggest calling 021 200 5391 to confirm hours
 - Format lists with line breaks for readability when helpful
 - Keep the tone: "You've got this" — inspiring, never corporate-stiff
@@ -210,7 +207,7 @@ For accurate, up-to-date information on fees, bursaries, payment plans, or the n
         'bot',
         "Sorry, I couldn't connect right now. Please try again or reach us directly at admin@ymm.org.za — we're happy to help!"
       );
-      console.error('[Nelson/YMM]', err);
+      console.error('[YMMBot]', err);
     }
 
     sendBtn.disabled = false;
@@ -244,7 +241,7 @@ For accurate, up-to-date information on fees, bursaries, payment plans, or the n
   // ── GREETING ─────────────────────────────────
   appendMessage(
     'bot',
-    "Hi there! 👋 I'm Nelson, your YMM guide.\n\nAsk me about our programmes, how to apply, career paths, or where to find us — I've got you!"
+    "Hi there! 👋 I'm YMM Bot, your YMM guide.\n\nAsk me about our programmes, how to apply, career paths, or where to find us — I've got you!"
   );
 
 })();
